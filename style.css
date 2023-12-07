@@ -1,7 +1,7 @@
 .container {
   display: flex;
   flex-direction: column;
-  padding-bottom: 3vh;
+  margin-bottom: 0;
 }
 
 .home_container {
@@ -20,7 +20,7 @@
 	border-bottom: 0.2vh solid black;
 	background-color: white;
 	position: fixed;
-	z-index: 1;
+	z-index: 10000;
 }
 
 .nav_menu {
@@ -77,7 +77,7 @@ body {
 }
 
 .main_text:hover:before {
-    content:'Suckerverse';
+  content:'Suckerverse';
 }
 
 .main_text:hover span {
@@ -94,6 +94,7 @@ body {
 	display: flex;
 	flex-direction: row;
 	margin-right: 5vh;
+	margin-bottom: 0;
 }
 
 .arrow {
@@ -150,14 +151,9 @@ body {
 	z-index: 0;
 }
 
-.ad_box img:after {
-	z-index: -1;
-	position: relative;
-}
-
 .ad_box:hover {
-	-webkit-transform: scale(1.05);
-	z-index: 1;
+	transform: scale(1.05);
+	z-index: ;
 }
 
 .big_img {
@@ -338,9 +334,8 @@ body {
 .disclaimer {
 	color: #36454F;
 	opacity: 0.8;
-	margin-left: 8vw;
+	margin-left: 10vw;
 	margin-right: 8vw;
-	text-align: center;
 	font-family: 'facebook-letter-faces-regular', sans-serif;
 }
 
@@ -355,13 +350,14 @@ body {
 }
 
 .footer {
-	height: 30vw;
-	min-height: 30vw;
+	height: 27vw;
+	min-height: 25vw;
 	color: #36454F;
 	background-color: #F1F2F3;
 	font-family: 'facebook-letter-faces-regular', sans-serif;
 	display: flex;
 	flex-direction: row;
+  width: 100%;
 }
 
 .foot-cols {
@@ -376,6 +372,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	margin-left: 50%;
+	margin-bottom: 0;
 }
 
 #foot {
@@ -387,4 +384,3 @@ body {
 	text-decoration: none;
 	opacity: 0.8;
 }
-
